@@ -1,12 +1,18 @@
 .header {
+    position: fixed;
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
 
     &__container{
         background-color: #fff;
         box-shadow: 0 1.25rem 5.3125rem rgb(0 0 0 / 8%), inset 0 0.1875rem 0 #22c2af;
-        padding: 25px 30px
+        padding: 15px 30px;
+        margin-top: 50px;
+        width: calc(100vw - 20px);
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__navigation {
@@ -18,4 +24,17 @@
     &__links {
         margin-left: auto;
     }
+
+    nav {
+        a {
+            padding: 0 15px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-decoration: none;
+        
+            &.router-link-exact-active {
+            color: #22c2af;
+            }
+        }
+        }
 }
